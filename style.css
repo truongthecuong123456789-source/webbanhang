@@ -1,0 +1,374 @@
+.logo {
+    width: 150px;
+    height: auto;
+}
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    color: #2b1d14;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section-p1 {
+    padding: 50px 80px;
+}
+
+
+.anh span {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 3px 8px;
+    z-index: 5;
+}
+
+.anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===== topbar ===== */
+#topbar {
+    background-color: #3b2518;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#topbar a {
+    color: white;
+    font-size: 14px;
+    margin: 0 28px;
+}
+
+/* ===== header ===== */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #3b2518;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 0 15px;
+}
+
+#navbar li a {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+#navbar li a:hover {
+    border-bottom: 2px solid #3b2518;
+}
+
+#tools {
+    display: flex;
+    align-items: center;
+}
+
+#tools a {
+    margin-left: 18px;
+    font-size: 18px;
+}
+
+.search {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px 15px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 160px;
+    font-size: 14px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+/* ===== hero ===== */
+#hero {
+    position: relative;
+    height: 620px;
+}
+
+#hero .anh {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.hero-text {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    width: 45%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 54px;
+    line-height: 1.15;
+}
+
+.hero-text h3 {
+    font-size: 34px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 15px 0 30px 0;
+}
+
+.hero-text button {
+    padding: 15px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.btn-white {
+    background-color: white;
+    color: #3b2518;
+    border: 1px solid white;
+}
+
+.btn-line {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hero-text button:hover {
+    background-color: #3b2518;
+    color: white;
+}
+
+/* ===== danh muc ===== */
+.cat-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.cat .anh {
+    height: 260px;
+}
+
+.cat p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ===== san pham ===== */
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pro .anh {
+    height: 280px;
+}
+
+.pro h4 {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.pro h5 {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* ===== banner khuyen mai ===== */
+#banner .anh {
+    height: 280px;
+}
+
+/*  theo phong  */
+.room-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 20px;
+}
+
+.room-container .anh {
+    height: 360px;
+}
+
+/*  footer */
+#footer {
+    background-color: #3b2518;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+#footer .col {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h3 {
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+#footer h4 {
+    margin-bottom: 12px;
+}
+
+#footer a,
+#footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* ===== nut an/hien khung ===== */
+#btn-mark {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* ===== man hinh nho ===== */
+@media (max-width: 799px) {
+    .section-p1 {
+        padding: 30px 20px;
+    }
+
+    #header {
+        padding: 15px 20px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    #navbar li {
+        padding: 10px 20px;
+    }
+
+    #topbar {
+        flex-wrap: wrap;
+    }
+
+    #topbar a {
+        margin: 4px 12px;
+    }
+
+    #hero {
+        height: 480px;
+    }
+
+    .hero-text {
+        right: 20px;
+        left: 20px;
+        width: auto;
+        bottom: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text h3 {
+        font-size: 22px;
+    }
+
+    .cat-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pro-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    #footer {
+        flex-wrap: wrap;
+        padding: 30px 20px;
+    }
+
+    #footer .col {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}

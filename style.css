@@ -1,0 +1,717 @@
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    width: 100%;
+    color: #26241f;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Manrope, Arial, sans-serif;
+}
+
+.wrap {
+    width: 88%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+/* khung anh (nen xam, chua co anh thi chi hien nen xam) */
+.anh {
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #8c7965;
+    margin-bottom: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 24px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 12px;
+    transition: 0.2s;
+}
+
+.btn-white {
+    background-color: white;
+    color: #25231f;
+    border: 1px solid white;
+}
+
+.btn-line {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background-color: #3b2518;
+    color: white;
+    border-color: #3b2518;
+}
+
+/* tieu de moi khoi */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.head h2 {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.mota {
+    color: #77746d;
+    line-height: 1.7;
+}
+
+.xem-het {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a99b8b;
+}
+
+/* ===== topbar ===== */
+#topbar {
+    background-color: #292720;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+}
+
+/* ===== header ===== */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 80px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 0 15px;
+}
+
+#navbar li a {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+}
+
+#navbar li a:hover {
+    border-bottom: 2px solid #3b2518;
+}
+
+#navbar li a.sale {
+    color: #9b624c;
+}
+
+#tools {
+    display: flex;
+    align-items: center;
+}
+
+#tools a {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+/* ===== hero ===== */
+#hero {
+    position: relative;
+    height: 620px;
+    background-color: #b5a99b;
+}
+
+#hero .anh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(25, 24, 21, 0.58), rgba(25, 24, 21, 0.18) 55%, rgba(25, 24, 21, 0.02));
+}
+
+.hero-text {
+    position: absolute;
+    left: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    color: white;
+}
+
+.hero-text .eyebrow {
+    color: #eee2d2;
+}
+
+.hero-text h1 {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.hero-text h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 18px 0 28px 0;
+}
+
+/* ===== 4 cam ket ===== */
+#trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e1da;
+}
+
+#trust .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trust .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d8d1c8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #766653;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+#trust p {
+    display: flex;
+    flex-direction: column;
+}
+
+#trust b {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+#trust small {
+    font-size: 11px;
+    color: #77746d;
+}
+
+/* ===== san pham ===== */
+#product1,
+#category {
+    padding-top: 80px;
+}
+
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pro .anh {
+    aspect-ratio: 4 / 5;
+}
+
+.pro:hover img {
+    transform: scale(1.04);
+}
+
+.tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+    background-color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding: 7px 9px;
+}
+
+.loai {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: #898176;
+    margin: 16px 0 7px 0;
+}
+
+.pro h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.pro h5 {
+    font-size: 13px;
+}
+
+/* ===== banner phu ===== */
+#banner {
+    position: relative;
+    margin-top: 80px;
+    height: 440px;
+    overflow: hidden;
+    background-color: #aaa096;
+}
+
+#banner .anh {
+    width: 100%;
+    height: 100%;
+}
+
+#banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(28, 26, 22, 0.58), rgba(28, 26, 22, 0.12));
+}
+
+.banner-text {
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 480px;
+    color: white;
+}
+
+.banner-text .eyebrow {
+    color: #eee2d2;
+}
+
+.banner-text h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.banner-text p:not(.eyebrow) {
+    line-height: 1.8;
+    max-width: 370px;
+    margin-bottom: 24px;
+}
+
+/* ===== danh muc ===== */
+.cat-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: 240px 240px;
+    gap: 15px;
+}
+
+.cat {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.cat .anh {
+    width: 100%;
+    height: 100%;
+}
+
+.cat-tall {
+    grid-row: span 2;
+}
+
+.cat::after,
+.room::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
+
+.cat:hover img,
+.room:hover img {
+    transform: scale(1.04);
+}
+
+.cat span {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+}
+
+/* ===== theo phong ===== */
+#room {
+    margin-top: 80px;
+    padding: 80px 0;
+    background-color: #f8f7f4;
+}
+
+.room-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+.room {
+    position: relative;
+    display: block;
+    height: 390px;
+    overflow: hidden;
+}
+
+.room .anh {
+    width: 100%;
+    height: 100%;
+}
+
+.room-text {
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+    bottom: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-text small {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+}
+
+.room-text b {
+    font-family: Manrope, Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.room-text i {
+    font-size: 12px;
+    font-style: normal;
+}
+
+/* ===== dang ky email ===== */
+#newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 75px 0;
+}
+
+#newsletter h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+#newsletter form {
+    display: flex;
+    width: 440px;
+    max-width: 48%;
+    border-bottom: 1px solid #7f776c;
+}
+
+#newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 3px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+}
+
+#newsletter button {
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== footer ===== */
+#footer {
+    background-color: #282720;
+    color: #f6f3ed;
+    padding-top: 55px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 50px;
+    padding-bottom: 48px;
+}
+
+#footer .col {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h3 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+#footer h4 {
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+
+#footer a,
+#footer p {
+    font-size: 12px;
+    color: #c4c0b7;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #4a4840;
+    padding: 18px 0 20px 0;
+    color: #aaa69d;
+    font-size: 11px;
+}
+
+/* ===== man hinh nho ===== */
+@media (max-width: 799px) {
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    #topbar {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    #header {
+        padding: 14px 20px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    #navbar li {
+        padding: 12px 20px;
+    }
+
+    #hero {
+        height: 520px;
+    }
+
+    .hero-text {
+        left: 6%;
+        right: 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h3 {
+        font-size: 14px;
+    }
+
+    #trust {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 12px;
+    }
+
+    #trust .item {
+        justify-content: flex-start;
+    }
+
+    #product1,
+    #category {
+        padding-top: 50px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .head h2 {
+        font-size: 28px;
+    }
+
+    .pro-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 12px;
+    }
+
+    #banner {
+        margin-top: 50px;
+        height: 400px;
+    }
+
+    .banner-text {
+        left: 6%;
+        right: 6%;
+    }
+
+    .banner-text h2 {
+        font-size: 34px;
+    }
+
+    .cat-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 260px 190px 190px;
+        gap: 10px;
+    }
+
+    #room {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    .room {
+        height: 320px;
+    }
+
+    #newsletter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    #newsletter form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

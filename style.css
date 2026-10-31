@@ -1,0 +1,1623 @@
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    width: 100%;
+    color: #26241f;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Manrope, Arial, sans-serif;
+}
+
+.wrap {
+    width: 88%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+/* khung anh (nen xam, chua co anh thi chi hien nen xam) */
+.anh {
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.anh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #8c7965;
+    margin-bottom: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 24px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 12px;
+    transition: 0.2s;
+}
+
+.btn-white {
+    background-color: white;
+    color: #25231f;
+    border: 1px solid white;
+}
+
+.btn-line {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background-color: #3b2518;
+    color: white;
+    border-color: #3b2518;
+}
+
+/* tieu de moi khoi */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.head h2 {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.mota {
+    color: #77746d;
+    line-height: 1.7;
+}
+
+.xem-het {
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a99b8b;
+}
+
+/* ===== topbar ===== */
+#topbar {
+    background-color: #292720;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+}
+
+/* ===== header ===== */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 80px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar li {
+    padding: 0 15px;
+}
+
+#navbar li a {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+}
+
+#navbar li a:hover {
+    border-bottom: 2px solid #3b2518;
+}
+
+#navbar li a.sale {
+    color: #9b624c;
+}
+
+#tools {
+    display: flex;
+    align-items: center;
+}
+
+#tools a {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+/* ===== hero ===== */
+#hero {
+    position: relative;
+    height: 620px;
+    background-color: #b5a99b;
+}
+
+#hero .anh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(25, 24, 21, 0.58), rgba(25, 24, 21, 0.18) 55%, rgba(25, 24, 21, 0.02));
+}
+
+.hero-text {
+    position: absolute;
+    left: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    color: white;
+}
+
+.hero-text .eyebrow {
+    color: #eee2d2;
+}
+
+.hero-text h1 {
+    font-size: 62px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+.hero-text h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 18px 0 28px 0;
+}
+
+/* ===== 4 cam ket ===== */
+#trust {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e1da;
+}
+
+#trust .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trust .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d8d1c8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #766653;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+#trust p {
+    display: flex;
+    flex-direction: column;
+}
+
+#trust b {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+#trust small {
+    font-size: 11px;
+    color: #77746d;
+}
+
+/* ===== san pham ===== */
+#product1,
+#category {
+    padding-top: 80px;
+}
+
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pro .anh {
+    aspect-ratio: 4 / 5;
+}
+
+.pro:hover img {
+    transform: scale(1.04);
+}
+
+.tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+    background-color: white;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding: 7px 9px;
+}
+
+.loai {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: #898176;
+    margin: 16px 0 7px 0;
+}
+
+.pro h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.pro h5 {
+    font-size: 13px;
+}
+
+/* ===== banner phu ===== */
+#banner {
+    position: relative;
+    margin-top: 80px;
+    height: 440px;
+    overflow: hidden;
+    background-color: #aaa096;
+}
+
+#banner .anh {
+    width: 100%;
+    height: 100%;
+}
+
+#banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(28, 26, 22, 0.58), rgba(28, 26, 22, 0.12));
+}
+
+.banner-text {
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 480px;
+    color: white;
+}
+
+.banner-text .eyebrow {
+    color: #eee2d2;
+}
+
+.banner-text h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.banner-text p:not(.eyebrow) {
+    line-height: 1.8;
+    max-width: 370px;
+    margin-bottom: 24px;
+}
+
+/* ===== danh muc ===== */
+.cat-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-template-rows: 240px 240px;
+    gap: 15px;
+}
+
+.cat {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.cat .anh {
+    width: 100%;
+    height: 100%;
+}
+
+.cat-tall {
+    grid-row: span 2;
+}
+
+.cat::after,
+.room::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
+
+.cat:hover img,
+.room:hover img {
+    transform: scale(1.04);
+}
+
+.cat span {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+}
+
+/* ===== theo phong ===== */
+#room {
+    margin-top: 80px;
+    padding: 80px 0;
+    background-color: #f8f7f4;
+}
+
+.room-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+.room {
+    position: relative;
+    display: block;
+    height: 390px;
+    overflow: hidden;
+}
+
+.room .anh {
+    width: 100%;
+    height: 100%;
+}
+
+.room-text {
+    position: absolute;
+    z-index: 2;
+    left: 25px;
+    bottom: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-text small {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+}
+
+.room-text b {
+    font-family: Manrope, Arial, sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.room-text i {
+    font-size: 12px;
+    font-style: normal;
+}
+
+/* ===== dang ky email ===== */
+#newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 75px 0;
+}
+
+#newsletter h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+#newsletter form {
+    display: flex;
+    width: 440px;
+    max-width: 48%;
+    border-bottom: 1px solid #7f776c;
+}
+
+#newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 3px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+}
+
+#newsletter button {
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== footer ===== */
+#footer {
+    background-color: #282720;
+    color: #f6f3ed;
+    padding-top: 55px;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 50px;
+    padding-bottom: 48px;
+}
+
+#footer .col {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h3 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+#footer h4 {
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+}
+
+#footer a,
+#footer p {
+    font-size: 12px;
+    color: #c4c0b7;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid #4a4840;
+    padding: 18px 0 20px 0;
+    color: #aaa69d;
+    font-size: 11px;
+}
+
+/* ===== man hinh nho ===== */
+@media (max-width: 799px) {
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    #topbar {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    #header {
+        padding: 14px 20px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    #navbar li {
+        padding: 12px 20px;
+    }
+
+    #hero {
+        height: 520px;
+    }
+
+    .hero-text {
+        left: 6%;
+        right: 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h3 {
+        font-size: 14px;
+    }
+
+    #trust {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 12px;
+    }
+
+    #trust .item {
+        justify-content: flex-start;
+    }
+
+    #product1,
+    #category {
+        padding-top: 50px;
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .head h2 {
+        font-size: 28px;
+    }
+
+    .pro-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 12px;
+    }
+
+    #banner {
+        margin-top: 50px;
+        height: 400px;
+    }
+
+    .banner-text {
+        left: 6%;
+        right: 6%;
+    }
+
+    .banner-text h2 {
+        font-size: 34px;
+    }
+
+    .cat-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 260px 190px 190px;
+        gap: 10px;
+    }
+
+    #room {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    .room {
+        height: 320px;
+    }
+
+    #newsletter {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    #newsletter form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
+/* =====================================================
+   PHAN THEM: chuyen trang, tim kiem, san pham, gio hang...
+   ===================================================== */
+.trang {
+    display: none;
+}
+
+.trang.hien {
+    display: block;
+}
+
+/* khung anh: hien ten file can them khi chua co anh */
+.anh::before {
+    content: attr(data-ten);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    font-size: 11px;
+    color: #8a8279;
+    word-break: break-all;
+}
+
+.anh img {
+    position: relative;
+}
+
+.btn-dark {
+    background-color: #3b2518;
+    color: white;
+    border: 1px solid #3b2518;
+    cursor: pointer;
+}
+
+.btn-out {
+    background-color: white;
+    color: #3b2518;
+    border: 1px solid #3b2518;
+    cursor: pointer;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    color: #3b2518;
+    border-color: #3b2518;
+}
+
+.btn-out:hover {
+    background-color: #3b2518;
+    color: white;
+}
+
+.full {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 18px 0 0 0;
+}
+
+/* ----- header: tim kiem + gio hang ----- */
+#header {
+    padding: 18px 40px;
+}
+
+#navbar li {
+    padding: 0 11px;
+}
+
+.form-tim {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 6px 14px;
+    background-color: white;
+}
+
+.form-tim input {
+    border: none;
+    outline: none;
+    width: 150px;
+    font-size: 13px;
+    background: transparent;
+}
+
+.form-tim button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.mobile-search {
+    display: none;
+}
+
+.cart-link {
+    position: relative;
+}
+
+#cart-count {
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background-color: #9b624c;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart-count.nay {
+    animation: nay 0.4s;
+}
+
+@keyframes nay {
+    50% {
+        transform: scale(1.6);
+    }
+}
+
+/* ----- the san pham + hieu ung khi dua chuot vao ----- */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px 20px;
+}
+
+.shop-grid.four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes hien {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.sp {
+    background-color: white;
+    animation: hien 0.5s both;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sp:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+.sp-hinh {
+    position: relative;
+    overflow: hidden;
+}
+
+.sp .anh {
+    aspect-ratio: 4 / 5;
+}
+
+.sp:hover .anh img {
+    transform: scale(1.08);
+}
+
+.nut-them {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 6;
+    padding: 12px;
+    border: none;
+    background-color: #3b2518;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(120%);
+    transition: 0.3s;
+}
+
+.sp:hover .nut-them {
+    opacity: 1;
+    transform: none;
+}
+
+.nut-them:hover {
+    background-color: #9b624c;
+}
+
+.sp .loai {
+    padding: 0 6px;
+}
+
+.sp h4 {
+    padding: 0 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.sp h4 a:hover {
+    color: #9b624c;
+}
+
+.gia {
+    padding: 0 6px 12px 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.gia s {
+    color: #999;
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.tag-sale {
+    background-color: #9b624c;
+    color: white;
+}
+
+/* ----- trang san pham ----- */
+.tieude-trang {
+    background-color: #f8f7f4;
+    padding: 34px 0;
+}
+
+.tieude-trang h2 {
+    font-family: Manrope, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.duong-dan {
+    font-size: 13px;
+    color: #7a6a5e;
+}
+
+.duong-dan a:hover {
+    text-decoration: underline;
+}
+
+.duong-dan.pad {
+    padding: 26px 0 0 0;
+}
+
+#shop-layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 40px;
+    padding: 30px 0 80px 0;
+}
+
+#sidebar h4 {
+    font-size: 15px;
+    margin: 0 0 12px 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+#sidebar li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+#sidebar li a:hover,
+#sidebar li a.dang {
+    color: #9b624c;
+    font-weight: bold;
+}
+
+#sidebar label {
+    display: block;
+    font-size: 13px;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+#sidebar label:last-of-type {
+    margin-bottom: 26px;
+}
+
+.xoa-loc {
+    width: 100%;
+    padding: 11px;
+    font-size: 13px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.toolbar #shop-dem {
+    margin-left: auto;
+    color: #77746d;
+    font-size: 13px;
+}
+
+.toolbar select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    outline: none;
+}
+
+#btn-loc {
+    display: none;
+    padding: 10px 14px;
+    border: 1px solid #3b2518;
+    background-color: white;
+    cursor: pointer;
+}
+
+.khong-co {
+    grid-column: 1 / -1;
+    padding: 60px 0;
+    text-align: center;
+    color: #77746d;
+}
+
+.giua {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.giua .btn {
+    margin: 0;
+}
+
+/* ----- chi tiet san pham ----- */
+#ct {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 24px 0 50px 0;
+}
+
+#anh-lon .anh {
+    aspect-ratio: 1 / 1;
+    cursor: zoom-in;
+}
+
+#anh-lon .anh:hover img {
+    transform: scale(1.15);
+}
+
+.thumbs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.thumb {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.thumb .anh {
+    aspect-ratio: 1 / 1;
+}
+
+.thumb:hover,
+.thumb.chon {
+    border-color: #3b2518;
+}
+
+.info h2 {
+    font-family: Manrope, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #e0a526;
+    margin-bottom: 14px;
+}
+
+.stars span {
+    color: #7a6a5e;
+    font-size: 13px;
+}
+
+.gia-lon {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.gia-lon s {
+    font-size: 16px;
+    font-weight: normal;
+    color: #999;
+}
+
+.short {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.info h5 {
+    font-size: 14px;
+    margin: 18px 0 8px 0;
+}
+
+.mau-chip {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mau-chip:hover,
+.mau-chip.chon {
+    border-color: #3b2518;
+    transform: scale(1.12);
+}
+
+.sl-box {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sl-box button {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.sl-box input,
+.sl-box span {
+    width: 50px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.btn-row {
+    margin: 26px 0;
+}
+
+.policy {
+    list-style: none;
+    font-size: 13px;
+    color: #555;
+}
+
+.policy li {
+    padding: 6px 0;
+}
+
+.policy i {
+    width: 24px;
+    color: #3b2518;
+}
+
+.tieu-de-nho {
+    font-family: Manrope, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 40px 0 20px 0;
+}
+
+.thong-so {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.thong-so td {
+    border: 1px solid #e4dbd3;
+    padding: 12px 16px;
+    font-size: 13px;
+}
+
+.thong-so td:first-child {
+    width: 180px;
+    background-color: #f6f2ee;
+    font-weight: bold;
+}
+
+#chi-tiet-noidung,
+#gio-noidung,
+#tt-noidung,
+#xong-noidung {
+    padding-bottom: 80px;
+}
+
+/* ----- gio hang + thanh toan ----- */
+.gio-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 40px;
+    align-items: start;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.bang-gio {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+}
+
+.bang-gio th {
+    text-align: left;
+    padding: 12px 8px;
+    border-bottom: 2px solid #3b2518;
+    font-size: 13px;
+}
+
+.bang-gio td {
+    padding: 16px 8px;
+    border-bottom: 1px solid #e4dbd3;
+    font-size: 13px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item-anh {
+    width: 84px;
+    height: 84px;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+.item-anh .anh {
+    width: 100%;
+    height: 100%;
+}
+
+.item h4 {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.item p {
+    color: #7a6a5e;
+    font-size: 12px;
+}
+
+.xoa {
+    cursor: pointer;
+    color: #a33;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.xoa:hover {
+    transform: scale(1.25);
+}
+
+.quay-lai {
+    display: inline-block;
+    margin-top: 24px;
+    font-weight: bold;
+}
+
+.summary {
+    background-color: #f6f2ee;
+    padding: 28px;
+}
+
+.summary h3 {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+.row.total {
+    border-top: 1px solid #ccc;
+    margin-top: 8px;
+    padding-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.gach {
+    border-top: 1px solid #ddd;
+    margin: 12px 0;
+}
+
+.coupon {
+    display: flex;
+    margin: 16px 0 0 0;
+}
+
+.coupon input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 13px;
+}
+
+.coupon button {
+    padding: 10px 14px;
+    border: 1px solid #3b2518;
+    background-color: white;
+    cursor: pointer;
+}
+
+.trong {
+    text-align: center;
+    padding: 80px 0;
+    color: #77746d;
+}
+
+.trong i {
+    font-size: 48px;
+    color: #cfc6bb;
+    margin-bottom: 16px;
+}
+
+.trong p {
+    margin-bottom: 22px;
+}
+
+.trong .btn {
+    margin: 0;
+}
+
+.form-tt label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.form-tt input[type="text"],
+.form-tt select,
+.form-tt textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.form-tt input:focus,
+.form-tt select:focus,
+.form-tt textarea:focus {
+    border-color: #3b2518;
+}
+
+.form-tt h4 {
+    margin: 24px 0 12px 0;
+}
+
+.form-tt label.radio {
+    font-weight: normal;
+}
+
+.loi {
+    display: block;
+    color: #c0392b;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.tt-sp {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.tt-sp small {
+    color: #77746d;
+}
+
+.xong {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+
+.xong > i {
+    font-size: 60px;
+    color: #4b8b5a;
+    margin-bottom: 14px;
+}
+
+.xong h2 {
+    font-family: Manrope, Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.xong .nho {
+    color: #77746d;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 10px 0 24px 0;
+}
+
+.xong .summary {
+    text-align: left;
+    margin-bottom: 26px;
+}
+
+.xong .btn {
+    margin: 0;
+}
+
+/* ----- thong bao nho ----- */
+#toast {
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    z-index: 200;
+    background-color: #292720;
+    color: white;
+    padding: 13px 24px;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 20px);
+    transition: 0.3s;
+}
+
+#toast.hien {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* ----- man hinh vua va nho ----- */
+@media (max-width: 1100px) {
+    #header {
+        padding: 14px 24px;
+    }
+
+    .header-search {
+        display: none;
+    }
+
+    .mobile-search {
+        display: block;
+        padding: 6px 20px 12px 20px;
+    }
+
+    .mobile-search .form-tim input {
+        flex: 1;
+        width: auto;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px 0;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    #navbar.active {
+        display: flex;
+    }
+
+    #navbar li {
+        padding: 12px 20px;
+    }
+
+    .mobile-search {
+        padding: 6px 20px 12px 20px;
+    }
+}
+
+@media (max-width: 899px) {
+    .shop-grid,
+    .shop-grid.four {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px 12px;
+    }
+
+    #shop-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    #sidebar {
+        display: none;
+        margin-bottom: 24px;
+    }
+
+    #sidebar.mo {
+        display: block;
+    }
+
+    #btn-loc {
+        display: inline-block;
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+    }
+
+    .toolbar .form-tim {
+        width: 100%;
+    }
+
+    .toolbar .form-tim input {
+        flex: 1;
+        width: auto;
+    }
+
+    .toolbar #shop-dem {
+        margin-left: 0;
+    }
+
+    #ct,
+    .gio-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .tieude-trang h2 {
+        font-size: 28px;
+    }
+}
+
+/* may cam ung (khong co chuot): luon hien nut them vao gio */
+@media (hover: none) {
+    .nut-them {
+        opacity: 1;
+        transform: none;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        padding: 9px;
+        font-size: 12px;
+    }
+}

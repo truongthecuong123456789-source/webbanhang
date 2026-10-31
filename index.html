@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPH | Nội thất cho không gian sống</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <template id="kho-anh">
+        <img data-sp="1" src="img/anh8.webp"> 
+        <img data-sp="2" src="img/anh9.webp"> 
+        <img data-sp="3" src="img/anh10.webp"> 
+        <img data-sp="4" src="img/anh11.webp"> 
+        <img data-sp="5" src="img/anh15.webp"> 
+        <img data-sp="6" src="img/anh16.webp"> 
+        <img data-sp="7" src="img/anh17.webp"> 
+        <img data-sp="8" src="img/anh18.webp"> 
+        <img data-sp="9" src="img/anh19.webp"> 
+        <img data-sp="10" src="img/anh20.webp"> 
+        <img data-sp="11" src="img/anh21.webp"> 
+        <img data-sp="12" src="img/anh22.webp">
+        <img data-sp="13" src="img/sp13.webp"> 
+        <img data-sp="14" src="img/sp14.webp"> 
+        <img data-sp="15" src="img/sp15.webp"> 
+        <img data-sp="16" src="img/sp16.webp">
+        <img data-sp="17" src="img/sp17.webp"> 
+        <img data-sp="18" src="img/sp18.webp">
+        <img data-sp="19" src="img/sp19.webp"> 
+        <img data-sp="20" src="img/sp20.webp"> 
+        <img data-sp="21" src="img/sp21.webp"> 
+        <img data-sp="22" src="img/sp22.webp"> 
+        <img data-sp="23" src="img/sp23.webp"> 
+        <img data-sp="24" src="img/sp24.webp"> 
+        <img data-sp="25" src="img/sp25.webp"> 
+        <img data-sp="26" src="img/sp26.webp"> 
+        <img data-sp="27" src="img/sp27.webp"> 
+        <img data-sp="28" src="img/sp28.webp"> 
+        <img data-sp="29" src="img/sp29.webp">
+        <img data-sp="30" src="img/sp30.webp"> 
+        <img data-sp="31" src="img/sp31.webp">
+        <img data-sp="32" src="img/sp32.webp"> 
+        <img data-sp="33" src="img/sp33.webp"> 
+        <img data-sp="34" src="img/sp34.webp"> 
+        <img data-sp="35" src="img/sp35.webp"> 
+        <img data-sp="36" src="img/sp36.webp"> 
+        <img data-sp="37" src="img/sp37.webp"> 
+        <img data-sp="38" src="img/sp38.webp"> 
+        <img data-sp="39" src="img/sp39.webp">
+        <img data-sp="40" src="img/sp40.webp">
+    </template>
+
+    <section id="topbar">
+        MIỄN PHÍ VẬN CHUYỂN ĐƠN TỪ 10 TRIỆU · ĐỔI TRẢ LINH HOẠT TRONG 7 NGÀY
+    </section>
+
+    <!-- header -->
+    <section id="header">
+        <a href="#/"><img src="img/logo.png" class="logo" alt="Typh"></a>
+
+        <ul id="navbar">
+            <li class="mobile-search">
+                <form class="form-tim"><input type="text" placeholder="Tìm sản phẩm..."><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+            </li>
+            <li><a href="#/shop/sofa">SOFA</a></li>
+            <li><a href="#/shop/tham">THẢM</a></li>
+            <li><a href="#/shop/giuong">GIƯỜNG</a></li>
+            <li><a href="#/shop/ban">BÀN</a></li>
+            <li><a href="#/shop/ghe">GHẾ</a></li>
+            <li><a href="#/shop/tuke">TỦ & KỆ</a></li>
+            <li><a href="#/shop/den">ĐÈN</a></li>
+            <li><a href="#/shop/decor">DECOR</a></li>
+            <li><a href="#/shop/sale" class="sale">SALE</a></li>
+        </ul>
+
+        <div id="tools">
+            <form class="form-tim header-search"><input type="text" placeholder="Tìm kiếm sản phẩm..."><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+            <a href="#/cart" class="cart-link"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </section>
+
+    <!-- === TRANG CHU === -->
+    <div class="trang hien" id="trang-home">
+        <section id="hero">
+            <div class="anh" data-ten="anh1"><img src="img/anh1.webp" alt=""></div>
+            <div class="hero-shade"></div>
+            <div class="hero-text">
+                <p class="eyebrow">DESIGN YOUR EVERYDAY</p>
+                <h1>Hoàn thiện không gian phòng khách</h1>
+                <h3>Ấm cúng, tinh tế và mang dấu ấn riêng của bạn.</h3>
+                <a href="#/shop" class="btn btn-white">Khám phá bộ sưu tập ↗</a>
+                <a href="#/shop/sofa" class="btn btn-line">Mua sắm sofa</a>
+            </div>
+        </section>
+
+        <section id="category" class="wrap">
+            <div class="head">
+                <div>
+                    <p class="eyebrow">SHOP BY CATEGORY</p>
+                    <h2>Dạo quanh thế giới nội thất</h2>
+                </div>
+                <a href="#/shop" class="xem-het">Xem tất cả sản phẩm ↗</a>
+            </div>
+            <div class="cat-container">
+                <a href="#/shop/sofa" class="cat cat-tall"><div class="anh" data-ten="anh2"><img src="img/anh2.webp" alt=""></div><span>SOFA ↗</span></a>
+                <a href="#/shop/tham" class="cat"><div class="anh" data-ten="anh3"><img src="img/anh3.webp" alt=""></div><span>THẢM ↗</span></a>
+                <a href="#/shop/giuong" class="cat"><div class="anh" data-ten="anh4"><img src="img/anh4.webp" alt=""></div><span>GIƯỜNG ↗</span></a>
+                <a href="#/shop/ban" class="cat"><div class="anh" data-ten="anh5"><img src="img/anh5.webp" alt=""></div><span>BÀN ↗</span></a>
+                <a href="#/shop/den" class="cat"><div class="anh" data-ten="anh7"><img src="img/anh7.webp" alt=""></div><span>ĐÈN ↗</span></a>
+            </div>
+        </section>
+
+        <section id="product1" class="wrap">
+            <div class="head">
+                <div>
+                    <p class="eyebrow">THE MOST LOVED</p>
+                    <h2>Best seller</h2>
+                    <p class="mota">Những thiết kế được yêu thích cho ngôi nhà có gu.</p>
+                </div>
+            </div>
+            <div class="shop-grid four" id="ds-best"></div>
+        </section>
+
+        <section id="banner" class="wrap">
+            <div class="anh" data-ten="anh16"><img src="img/anh16.webp" alt=""></div>
+            <div class="banner-text">
+                <p class="eyebrow">LIVE BEAUTIFULLY</p>
+                <h2>Một chút tinh tế,<br>một nhà an yên.</h2>
+                <p>Nhập mã <b>TYPH10</b> khi thanh toán để được giảm 10%.</p>
+                <a href="#/shop/sale" class="btn btn-white">Xem sản phẩm giảm giá ↗</a>
+            </div>
+        </section>
+
+        <section id="moi" class="wrap">
+            <div class="head">
+                <div>
+                    <p class="eyebrow">JUST ARRIVED</p>
+                    <h2>Sản phẩm mới</h2>
+                </div>
+                <a href="#/shop" class="xem-het">Xem tất cả ↗</a>
+            </div>
+            <div class="shop-grid four" id="ds-moi"></div>
+        </section>
+
+        <section id="room">
+            <div class="wrap">
+                <div class="head">
+                    <div>
+                        <p class="eyebrow">FIND YOUR INSPIRATION</p>
+                        <h2>Mua sắm theo không gian</h2>
+                    </div>
+                </div>
+                <div class="room-container">
+                    <a href="#/shop/sofa" class="room"><div class="anh" data-ten="anh13"><img src="img/anh13.webp" alt=""></div><div class="room-text"><small>KHÔNG GIAN SỐNG</small><b>Phòng khách</b><i>Khám phá ↗</i></div></a>
+                    <a href="#/shop/giuong" class="room"><div class="anh" data-ten="anh12"><img src="img/anh12.webp" alt=""></div><div class="room-text"><small>THƯ GIÃN MỖI NGÀY</small><b>Phòng ngủ</b><i>Khám phá ↗</i></div></a>
+                    <a href="#/shop/ban" class="room"><div class="anh" data-ten="anh14"><img src="img/anh14.webp" alt=""></div><div class="room-text"><small>GẮN KẾT YÊU THƯƠNG</small><b>Phòng ăn</b><i>Khám phá ↗</i></div></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="wrap">
+            <div>
+                <p class="eyebrow">STAY INSPIRED</p>
+                <h2>Nhận cảm hứng cho tổ ấm của bạn</h2>
+                <p class="mota">Đăng ký để cập nhật bộ sưu tập và tin tức mới nhất.</p>
+            </div>
+            <form id="form-email">
+                <input type="email" placeholder="Nhập email của bạn" required>
+                <button type="submit">Đăng ký ↗</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- ===== TRANG SAN PHAM ===== -->
+    <div class="trang" id="trang-shop">
+        <section class="tieude-trang">
+            <div class="wrap">
+                <p class="duong-dan"><a href="#/">Trang chủ</a> / Sản phẩm</p>
+                <h2 id="shop-tieude">Tất cả sản phẩm</h2>
+            </div>
+        </section>
+
+        <section class="wrap" id="shop-layout">
+            <aside id="sidebar"></aside>
+
+            <div>
+                <div class="toolbar">
+                    <form class="form-tim"><input type="text" placeholder="Tìm sản phẩm..."><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+                    <span id="shop-dem"></span>
+                    <button id="btn-loc"><i class="fa-solid fa-sliders"></i> Bộ lọc</button>
+                    <select id="sort-select">
+                        <option value="moi">Mới nhất</option>
+                        <option value="gia-tang">Giá tăng dần</option>
+                        <option value="gia-giam">Giá giảm dần</option>
+                        <option value="ten">Tên A - Z</option>
+                    </select>
+                </div>
+                <div class="shop-grid" id="ds-shop"></div>
+                <div class="giua"><button id="xem-them" class="btn btn-out">Xem thêm sản phẩm</button></div>
+            </div>
+        </section>
+    </div>
+    <div class="trang" id="trang-product"><div class="wrap" id="chi-tiet-noidung"></div></div>
+    <div class="trang" id="trang-cart"><div class="wrap" id="gio-noidung"></div></div>
+    <div class="trang" id="trang-checkout"><div class="wrap" id="tt-noidung"></div></div>
+    <div class="trang" id="trang-done"><div class="wrap" id="xong-noidung"></div></div>
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer-main wrap">
+            <div class="col">
+                <h3>TYPH</h3>
+                <p>Nội thất cho không gian sống tinh tế, thoải mái và mang dấu ấn riêng.</p>
+            </div>
+            <div class="col">
+                <h4>SẢN PHẨM</h4>
+                <a href="#/shop/sofa">Sofa</a>
+                <a href="#/shop/tham">Thảm</a>
+                <a href="#/shop/giuong">Giường</a>
+                <a href="#/shop/ban">Bàn & ghế</a>
+            </div>
+            <div class="col">
+                <h4>HỖ TRỢ</h4>
+                <a href="#">Liên hệ</a>
+                <a href="#">Chính sách giao hàng</a>
+                <a href="#">Chính sách đổi trả</a>
+            </div>
+            <div class="col">
+                <h4>KẾT NỐI</h4>
+                <p>Hotline: 0867 933 192</p>
+                <p>Email: truongthecuongtv2021@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom wrap">
+            <span>© 2026 TYPH Store. Giao diện phục vụ mục đích học tập.</span>
+            <span>Thiết kế cho không gian sống hiện đại.</span>
+        </div>
+    </section>
+
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPH | Nội thất cho không gian sống</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        ===== CAC CHO THEM ANH MOI (trang chu) - moi cho co dong chu thich "ANH" ngay phia tren =====
+        Banner sale ......... anh16 (900x1000)              Bo suu tap .......... bosuutap-1, bosuutap-2
+        Chat lieu ........... chat-lieu (800x500)           Sofa bed (5 anh) .... sofabed-1 ... sofabed-5
+        Slider phong (3) .... phong-1 ... phong-3 (1920x700)  Review (4) ......... review-1 ... review-4
+        Doi tac (8 logo) .... doi-tac-1 ... doi-tac-8         Bai viet (4) ........ bai-viet-1 ... bai-viet-4
+        Instagram (4) ....... insta-1 ... insta-4              Showroom (2) ........ showroom-1, showroom-2
+        Duoi file .webp / .jpg / .png deu duoc. Chua co anh thi o do hien nen xam kem ten file can them.
+        Anh san pham: sua trong khoi "KHO ANH SAN PHAM" ben duoi.
+    -->
+    <template id="kho-anh">
+        <img data-sp="1" src="img/anh8.webp"> 
+        <img data-sp="2" src="img/anh9.webp"> 
+        <img data-sp="3" src="img/anh10.webp"> 
+        <img data-sp="4" src="img/anh11.webp"> 
+        <img data-sp="5" src="img/anh15.webp"> 
+        <img data-sp="6" src="img/anh16.webp"> 
+        <img data-sp="7" src="img/anh17.webp"> 
+        <img data-sp="8" src="img/anh18.webp"> 
+        <img data-sp="9" src="img/anh19.webp"> 
+        <img data-sp="10" src="img/anh20.webp"> 
+        <img data-sp="11" src="img/anh21.webp"> 
+        <img data-sp="12" src="img/anh22.webp">
+        <img data-sp="13" src="img/sp13.webp"> 
+        <img data-sp="14" src="img/sp14.webp"> 
+        <img data-sp="15" src="img/sp15.webp"> 
+        <img data-sp="16" src="img/sp16.webp">
+        <img data-sp="17" src="img/sp17.webp"> 
+        <img data-sp="18" src="img/sp18.webp">
+        <img data-sp="19" src="img/sp19.webp"> 
+        <img data-sp="20" src="img/sp20.webp"> 
+        <img data-sp="21" src="img/sp21.webp"> 
+        <img data-sp="22" src="img/sp22.webp"> 
+        <img data-sp="23" src="img/sp23.webp"> 
+        <img data-sp="24" src="img/sp24.webp"> 
+        <img data-sp="25" src="img/sp25.webp"> 
+        <img data-sp="26" src="img/sp26.webp"> 
+        <img data-sp="27" src="img/sp27.webp"> 
+        <img data-sp="28" src="img/sp28.webp"> 
+        <img data-sp="29" src="img/sp29.webp">
+        <img data-sp="30" src="img/sp30.webp"> 
+        <img data-sp="31" src="img/sp31.webp">
+        <img data-sp="32" src="img/sp32.webp"> 
+        <img data-sp="33" src="img/sp33.webp"> 
+        <img data-sp="34" src="img/sp34.webp"> 
+        <img data-sp="35" src="img/sp35.webp"> 
+        <img data-sp="36" src="img/sp36.webp"> 
+        <img data-sp="37" src="img/sp37.webp"> 
+        <img data-sp="38" src="img/sp38.webp"> 
+        <img data-sp="39" src="img/sp39.webp">
+        <img data-sp="40" src="img/sp40.webp">
+    </template>
+
+    <section id="topbar">
+        MIỄN PHÍ VẬN CHUYỂN ĐƠN TỪ 10 TRIỆU · ĐỔI TRẢ LINH HOẠT TRONG 7 NGÀY
+    </section>
+
+    <!-- header -->
+    <section id="header">
+        <a href="#/"><img src="img/logo.png" class="logo" alt="Typh"></a>
+
+        <ul id="navbar">
+            <li class="mobile-search">
+                <form class="form-tim"><input type="text" placeholder="Tìm sản phẩm..."><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+            </li>
+            <li><a href="#/shop/sofa">SOFA</a></li>
+            <li><a href="#/shop/tham">THẢM</a></li>
+            <li><a href="#/shop/giuong">GIƯỜNG</a></li>
+            <li><a href="#/shop/ban">BÀN</a></li>
+            <li><a href="#/shop/ghe">GHẾ</a></li>
+            <li><a href="#/shop/tuke">TỦ & KỆ</a></li>
+            <li><a href="#/shop/den">ĐÈN</a></li>
+            <li><a href="#/shop/decor">DECOR</a></li>
+            <li><a href="#/shop/sale" class="sale">SALE</a></li>
+        </ul>
+
+        <div id="tools">
+            <form class="form-tim header-search"><input type="text" placeholder="Tìm kiếm sản phẩm..."><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+            <div id="tai-khoan"></div>
+            <a href="#/cart" class="cart-link" title="Giỏ hàng"><i class="fa-solid fa-bag-shopping"></i><span id="cart-count">0</span></a>
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </section>
+
+    <!-- === TRANG CHU === -->
+    <div class="trang hien" id="trang-home">
+        <section id="hero">
+            <div class="anh" data-ten="anh1"><img src="img/anh1.webp" alt=""></div>
+            <div class="hero-shade"></div>
+            <div class="hero-text">
+                <p class="eyebrow">DESIGN YOUR EVERYDAY</p>
+                <h1>Hoàn thiện không gian phòng khách</h1>
+                <h3>Ấm cúng, tinh tế và mang dấu ấn riêng của bạn.</h3>
+                <a href="#/shop" class="btn btn-white">Khám phá bộ sưu tập ↗</a>
+                <a href="#/shop/sofa" class="btn btn-line">Mua sắm sofa</a>
+            </div>
+        </section>
+
+        <section id="category" class="wrap">
+            <div class="head">
+                <div>
+                    <p class="eyebrow">SHOP BY CATEGORY</p>
+                    <h2>Dạo quanh thế giới nội thất</h2>
+                </div>
+                <a href="#/shop" class="xem-het">Xem tất cả sản phẩm ↗</a>
+            </div>
+            <div class="cat-container">
+                <a href="#/shop/sofa" class="cat cat-tall"><div class="anh" data-ten="anh2"><img src="img/anh2.webp" alt=""></div><span>SOFA ↗</span></a>
+                <a href="#/shop/tham" class="cat"><div class="anh" data-ten="anh3"><img src="img/anh3.webp" alt=""></div><span>THẢM ↗</span></a>
+                <a href="#/shop/giuong" class="cat"><div class="anh" data-ten="anh4"><img src="img/anh4.webp" alt=""></div><span>GIƯỜNG ↗</span></a>
+                <a href="#/shop/ban" class="cat"><div class="anh" data-ten="anh5"><img src="img/anh5.webp" alt=""></div><span>BÀN ↗</span></a>
+                <a href="#/shop/den" class="cat"><div class="anh" data-ten="anh7"><img src="img/anh7.webp" alt=""></div><span>ĐÈN ↗</span></a>
+            </div>
+        </section>
+
+        <section id="product1" class="wrap">
+            <div class="best-head">
+                <div class="tabs">
+                    <button class="tab chon" data-tab="sofa">Sofa</button>
+                    <button class="tab" data-tab="tham">Thảm</button>
+                    <button class="tab" data-tab="giuong">Giường</button>
+                    <button class="tab" data-tab="ban">Bàn</button>
+                </div>
+                <div class="best-tieude">
+                    <h2>Best seller</h2>
+                    <p class="mota">Top những sản phẩm nội thất được khách hàng yêu thích.</p>
+                </div>
+            </div>
+            <div class="slider-wrap">
+                <button class="mui trai" data-cuon="ds-best:-1" aria-label="Trước"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="slider-ngang" id="ds-best"></div>
+                <button class="mui phai" data-cuon="ds-best:1" aria-label="Sau"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="giua"><a href="#/shop/sofa" id="best-xem" class="xem-het">Xem thêm →</a></div>
+        </section>
+
+        <!-- ===== SALE CUOI NAM: anh ben trai + 4 san pham giam gia ===== -->
+        <section id="sale" class="wrap">
+            <div class="sale-layout">
+                <div class="sale-banner">
+                    <!-- ===== ANH BANNER SALE: img/anh16.webp (nen dung anh 900x1000) ===== -->
+                    <div class="anh" data-ten="anh16"><img src="img/anh16.webp" alt=""></div>
+                    <div class="sale-chu">
+                        <h3>Sale cuối năm</h3>
+                        <p class="so-to">15%<span>OFF</span></p>
+                        <p>Nhập mã <b>TYPH10</b> giảm thêm 10% khi thanh toán.</p>
+                        <a href="#/shop/sale" class="btn btn-white">Mua ngay ↗</a>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="sale-tieude">Year End Sale</h2>
+                    <div class="sale-grid" id="ds-sale"></div>
+                    <a href="#/shop/sale" class="xem-het">Xem thêm chương trình giảm giá →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DAO QUANH THE GIOI NOI THAT ===== -->
+        <section id="kham-pha" class="wrap">
+            <div class="kp-layout">
+                <div class="kp-chu">
+                    <h2>Dạo quanh thế giới nội thất TYPH</h2>
+                    <p class="mota">Khám phá hàng trăm thiết kế sofa, giường, bàn, đèn... được chọn lọc để căn nhà của bạn thêm ấm cúng và có gu.</p>
+                    <a href="#/shop" class="btn btn-dark">Khám phá bộ sưu tập mới →</a>
+                </div>
+                <div class="kp-anh">
+                    <!-- ===== ANH BO SUU TAP: img/bosuutap-1.webp (nen dung anh 700x900), img/bosuutap-2.webp (nen dung anh 400x900) ===== -->
+                    <div class="anh" data-ten="bosuutap-1"><img src="img/bosuutap-1.webp" alt=""></div>
+                    <div class="anh" data-ten="bosuutap-2"><img src="img/bosuutap-2.webp" alt=""></div>
+                </div>
+            </div>
+            <div class="tab-danh-muc">
+                <a href="#/shop/sofa" class="chon">Sofa</a><a href="#/shop/tham">Thảm</a><a href="#/shop/giuong">Giường</a><a href="#/shop/ban">Bàn</a><a href="#/shop/ghe">Ghế</a><a href="#/shop/den">Đèn</a><a href="#/shop/decor">Decor</a>
+            </div>
+        </section>
+
+        <!-- ===== TUY CHINH CHAT LIEU ===== -->
+        <section id="chat-lieu" class="wrap">
+            <div class="cl-layout">
+                <!-- ===== ANH CHAT LIEU: img/chat-lieu.webp (nen dung anh 800x500) ===== -->
+                <div class="anh" data-ten="chat-lieu"><img src="img/chat-lieu.webp" alt=""></div>
+                <div class="cl-chu">
+                    <h2>Tùy chỉnh chất liệu</h2>
+                    <p class="mota">Hàng chục loại vải và da để bạn chọn, từ vải nỉ mềm đến da cao cấp. Mỗi chất liệu đều được kiểm định độ bền và độ bám màu, giúp sofa đẹp lâu theo năm tháng.</p>
+                    <a href="#/shop" class="btn btn-out">Tìm chọn vải →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 4 CHINH SACH ===== -->
+        <section id="chinh-sach" class="wrap">
+            <div class="cs-hang">
+                <div><i class="fa-solid fa-truck-fast"></i><p><b>Miễn phí vận chuyển</b><small>Cho đơn từ 10 triệu</small></p></div>
+                <div><i class="fa-solid fa-rotate-left"></i><p><b>Miễn phí đổi trả</b><small>Trong vòng 7 ngày</small></p></div>
+                <div><i class="fa-solid fa-shield-halved"></i><p><b>Bảo hành khung sofa</b><small>36 tháng</small></p></div>
+                <div><i class="fa-solid fa-box-open"></i><p><b>Giao hàng lắp đặt</b><small>Tận nơi, nhanh chóng</small></p></div>
+            </div>
+        </section>
+
+        <!-- ===== SOFA BED ===== -->
+        <section id="sofa-bed" class="wrap">
+            <div class="sb-grid">
+                <!-- ===== ANH SOFA BED: img/sofabed-1.webp ... sofabed-5.webp (sofabed-3 la anh lon ben phai, nen dung 700x900) ===== -->
+                <div class="anh" data-ten="sofabed-1"><img src="img/sofabed-1.webp" alt=""></div>
+                <div class="anh" data-ten="sofabed-2"><img src="img/sofabed-2.webp" alt=""></div>
+                <div class="sb-lon"><div class="anh" data-ten="sofabed-3"><img src="img/sofabed-3.webp" alt=""></div><div class="sb-nhan"><b>Sintra</b><span>Có gì mà HOT?</span></div></div>
+                <div class="anh" data-ten="sofabed-4"><img src="img/sofabed-4.webp" alt=""></div>
+                <div class="anh" data-ten="sofabed-5"><img src="img/sofabed-5.webp" alt=""></div>
+            </div>
+            <div class="sb-chu">
+                <h2>Sofa bed</h2>
+                <p class="mota">Chiếc giường dự phòng khi nhà có khách, tiện lợi cho căn hộ nhỏ. Kéo ra là giường, gập lại là sofa êm ái để ngồi mỗi ngày.</p>
+                <a href="#/shop/sofa" class="xem-het">Chi tiết sản phẩm →</a>
+            </div>
+        </section>
+
+        <section id="moi" class="wrap">
+            <div class="head">
+                <div>
+                    <p class="eyebrow">JUST ARRIVED</p>
+                    <h2>Sản phẩm mới</h2>
+                </div>
+                <a href="#/shop" class="xem-het">Xem tất cả ↗</a>
+            </div>
+            <div class="shop-grid four" id="ds-moi"></div>
+        </section>
+
+        <!-- ===== BANNER TRUOT: PHONG KHACH / PHONG NGU / PHONG AN ===== -->
+        <section id="slider-phong">
+            <!-- ===== ANH SLIDER: img/phong-1.webp, phong-2.webp, phong-3.webp (nen dung anh 1920x700) ===== -->
+            <div class="slides" id="slides">
+                <div class="slide"><div class="anh" data-ten="phong-1"><img src="img/phong-1.webp" alt=""></div><div class="slide-chu"><h2>Phòng khách</h2><p>Một chút cảm hứng làm mới không gian ngay hôm nay nhé!</p><a href="#/shop/sofa" class="btn btn-white">Khám phá ngay</a></div></div>
+                <div class="slide"><div class="anh" data-ten="phong-2"><img src="img/phong-2.webp" alt=""></div><div class="slide-chu"><h2>Phòng ngủ</h2><p>Giấc ngủ êm hơn với những thiết kế tối giản, dịu mắt.</p><a href="#/shop/giuong" class="btn btn-white">Khám phá ngay</a></div></div>
+                <div class="slide"><div class="anh" data-ten="phong-3"><img src="img/phong-3.webp" alt=""></div><div class="slide-chu"><h2>Phòng ăn</h2><p>Bàn ghế gắn kết bữa cơm gia đình mỗi ngày.</p><a href="#/shop/ban" class="btn btn-white">Khám phá ngay</a></div></div>
+            </div>
+            <button class="mui trai" data-slide-prev aria-label="Trước"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="mui phai" data-slide-next aria-label="Sau"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="cham-hang"><span class="cham chon" data-slide-to="0"></span><span class="cham" data-slide-to="1"></span><span class="cham" data-slide-to="2"></span></div>
+        </section>
+
+        <section id="room">
+            <div class="wrap">
+                <div class="head">
+                    <div>
+                        <p class="eyebrow">FIND YOUR INSPIRATION</p>
+                        <h2>Mua sắm theo không gian</h2>
+                    </div>
+                </div>
+                <div class="room-container">
+                    <a href="#/shop/sofa" class="room"><div class="anh" data-ten="anh13"><img src="img/anh13.webp" alt=""></div><div class="room-text"><small>KHÔNG GIAN SỐNG</small><b>Phòng khách</b><i>Khám phá ↗</i></div></a>
+                    <a href="#/shop/giuong" class="room"><div class="anh" data-ten="anh12"><img src="img/anh12.webp" alt=""></div><div class="room-text"><small>THƯ GIÃN MỖI NGÀY</small><b>Phòng ngủ</b><i>Khám phá ↗</i></div></a>
+                    <a href="#/shop/ban" class="room"><div class="anh" data-ten="anh14"><img src="img/anh14.webp" alt=""></div><div class="room-text"><small>GẮN KẾT YÊU THƯƠNG</small><b>Phòng ăn</b><i>Khám phá ↗</i></div></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== REVIEW KHACH HANG ===== -->
+        <section id="review" class="wrap">
+            <h2 class="giua-tieu-de">Review quý giá từ khách hàng</h2>
+            <!-- ===== ANH REVIEW: img/review-1.webp ... review-4.webp (nen dung anh 800x600) ===== -->
+            <div class="slider-wrap">
+                <button class="mui trai" data-cuon="ds-review:-1" aria-label="Trước"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="slider-ngang" id="ds-review">
+                    <div class="review-card">
+                        <div class="anh" data-ten="review-1"><img src="img/review-1.webp" alt=""></div>
+                        <p class="trich">“Chúng tôi rất hài lòng với bộ sofa giường của TYPH. Nệm êm, khung chắc và giao hàng đúng hẹn. Nhà có khách là kéo ra thành giường rất tiện.”</p>
+                        <div class="nguoi"><i class="fa-solid fa-circle-user"></i><div><b>Nguyễn Minh Anh</b><span class="sao"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="anh" data-ten="review-2"><img src="img/review-2.webp" alt=""></div>
+                        <p class="trich">“Màu vải ngoài đời đẹp hơn trong ảnh. Nhân viên tư vấn nhiệt tình, giúp mình phối sofa với thảm rất hợp. Chắc chắn sẽ quay lại mua thêm.”</p>
+                        <div class="nguoi"><i class="fa-solid fa-circle-user"></i><div><b>Trần Thu Hà</b><span class="sao"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="anh" data-ten="review-3"><img src="img/review-3.webp" alt=""></div>
+                        <p class="trich">“Giường Lauran chắc chắn, lắp đặt nhanh gọn. Mình đặt online cả nhà, nhận hàng không phải sửa gì.”</p>
+                        <div class="nguoi"><i class="fa-solid fa-circle-user"></i><div><b>Lê Quốc Bảo</b><span class="sao"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="anh" data-ten="review-4"><img src="img/review-4.webp" alt=""></div>
+                        <p class="trich">“Thảm lông mềm, không rụng, dễ vệ sinh. Cả nhà, kể cả bé, đều thích nằm lên.”</p>
+                        <div class="nguoi"><i class="fa-solid fa-circle-user"></i><div><b>Phạm Ngọc Linh</b><span class="sao"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div></div>
+                    </div>
+                </div>
+                <button class="mui phai" data-cuon="ds-review:1" aria-label="Sau"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </section>
+
+        <!-- ===== DOI TAC ===== -->
+        <section id="doi-tac" class="wrap">
+            <h2 class="giua-tieu-de">Các khách hàng đã đồng hành cùng TYPH</h2>
+            <!-- ===== LOGO DOI TAC: img/doi-tac-1.webp ... doi-tac-8.webp (nen dung logo 300x120, nen trong suot) ===== -->
+            <div class="doi-tac-hang">
+                <div class="dt"><div class="anh" data-ten="doi-tac-1"><img src="img/doi-tac-1.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-2"><img src="img/doi-tac-2.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-3"><img src="img/doi-tac-3.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-4"><img src="img/doi-tac-4.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-5"><img src="img/doi-tac-5.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-6"><img src="img/doi-tac-6.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-7"><img src="img/doi-tac-7.webp" alt=""></div></div>
+                <div class="dt"><div class="anh" data-ten="doi-tac-8"><img src="img/doi-tac-8.webp" alt=""></div></div>
+            </div>
+        </section>
+
+        <!-- ===== BAI VIET ===== -->
+        <section id="bai-viet" class="wrap">
+            <h2 class="giua-tieu-de">Các bài viết được quan tâm nhất</h2>
+            <!-- ===== ANH BAI VIET: img/bai-viet-1.webp ... bai-viet-4.webp (nen dung anh 600x800) ===== -->
+            <div class="bv-grid">
+                <a href="#" data-sap class="bv"><div class="anh" data-ten="bai-viet-1"><img src="img/bai-viet-1.webp" alt=""></div><div class="bv-chu"><h4>5 mẹo bố trí phòng khách nhỏ</h4><span>Xem thêm →</span></div></a>
+                <a href="#" data-sap class="bv"><div class="anh" data-ten="bai-viet-2"><img src="img/bai-viet-2.webp" alt=""></div><div class="bv-chu"><h4>Cách chọn thảm hợp với sofa</h4><span>Xem thêm →</span></div></a>
+                <a href="#" data-sap class="bv"><div class="anh" data-ten="bai-viet-3"><img src="img/bai-viet-3.webp" alt=""></div><div class="bv-chu"><h4>Chăm sóc sofa vải đúng cách</h4><span>Xem thêm →</span></div></a>
+                <a href="#" data-sap class="bv"><div class="anh" data-ten="bai-viet-4"><img src="img/bai-viet-4.webp" alt=""></div><div class="bv-chu"><h4>Chọn đèn cho từng góc nhà</h4><span>Xem thêm →</span></div></a>
+            </div>
+        </section>
+
+        <!-- ===== INSTAGRAM ===== -->
+        <section id="insta" class="wrap">
+            <div class="insta-layout">
+                <div class="insta-chu">
+                    <h2>Chia sẻ khoảnh khắc cùng TYPH</h2>
+                    <p class="mota">Follow us on Instagram & Facebook</p>
+                    <a href="#" data-sap class="btn btn-out"><i class="fa-brands fa-instagram"></i> INSTAGRAM</a>
+                    <a href="#" data-sap class="btn btn-out"><i class="fa-brands fa-facebook"></i> FACEBOOK</a>
+                </div>
+                <div class="slider-wrap">
+                    <!-- ===== ANH INSTAGRAM: img/insta-1.webp ... insta-4.webp (nen dung anh vuong 600x600) ===== -->
+                    <div class="slider-ngang insta-hang" id="ds-insta">
+                    <div class="anh" data-ten="insta-1"><img src="img/insta-1.webp" alt=""></div>
+                    <div class="anh" data-ten="insta-2"><img src="img/insta-2.webp" alt=""></div>
+                    <div class="anh" data-ten="insta-3"><img src="img/insta-3.webp" alt=""></div>
+                    <div class="anh" data-ten="insta-4"><img src="img/insta-4.webp" alt=""></div>
+                    </div>
+                    <button class="mui phai" data-cuon="ds-insta:1" aria-label="Sau"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HE THONG SHOWROOM + LIEN HE ===== -->
+        <section id="showroom">
+            <div class="sr-layout">
+                <div class="sr-trai">
+                    <h2>Hệ thống Showroom của TYPH</h2>
+                    <div class="sr-nut">
+                        <button class="sr-btn chon" data-showroom="1">Showroom 1</button>
+                        <button class="sr-btn" data-showroom="2">Showroom 2</button>
+                    </div>
+                    <!-- ===== ANH SHOWROOM: img/showroom-1.webp, img/showroom-2.webp (nen dung anh 900x500) ===== -->
+                    <div class="sr-box hien" data-sr="1">
+                        <div class="anh" data-ten="showroom-1"><img src="img/showroom-1.webp" alt=""></div>
+                        <p><i class="fa-solid fa-location-dot"></i> 123 Đường Mẫu, Phường Demo, Thành phố (sửa thành địa chỉ của bạn)</p>
+                        <p><i class="fa-regular fa-clock"></i> 8:30 - 21:00 mỗi ngày</p>
+                        <p><i class="fa-solid fa-phone"></i> 0867 933 192</p>
+                    </div>
+                    <div class="sr-box" data-sr="2">
+                        <div class="anh" data-ten="showroom-2"><img src="img/showroom-2.webp" alt=""></div>
+                        <p><i class="fa-solid fa-location-dot"></i> 456 Đường Mẫu, Phường Demo, Thành phố (sửa thành địa chỉ của bạn)</p>
+                        <p><i class="fa-regular fa-clock"></i> 8:30 - 21:00 mỗi ngày</p>
+                        <p><i class="fa-solid fa-phone"></i> 0867 933 192</p>
+                    </div>
+                </div>
+                <div class="sr-phai">
+                    <h3>Liên hệ với TYPH</h3>
+                    <p class="nho">Để lại thông tin, TYPH sẽ gọi lại tư vấn cho bạn.</p>
+                    <form id="form-lien-he" novalidate>
+                        <input type="text" name="ten" placeholder="Họ và tên *">
+                        <em class="loi" id="loi-lh-ten"></em>
+                        <input type="text" name="sdt" placeholder="Số điện thoại *">
+                        <em class="loi" id="loi-lh-sdt"></em>
+                        <textarea name="noidung" rows="2" placeholder="Bạn cần tư vấn gì?"></textarea>
+                        <button type="submit" class="btn btn-white">Gửi thông tin ↗</button>
+                    </form>
+                    <h3 class="cach">Đăng ký nhận bản tin</h3>
+                    <p class="nho">Đăng ký để cập nhật bộ sưu tập và ưu đãi mới nhất.</p>
+                    <form id="form-email" class="dk-mail">
+                        <input type="email" placeholder="Nhập email của bạn" required>
+                        <button type="submit">Đăng ký ↗</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== TRANG SAN PHAM ===== -->
+    <div class="trang" id="trang-shop">
+        <section class="tieude-trang">
+            <div class="wrap">
+                <p class="duong-dan"><a href="#/">Trang chủ</a> / Sản phẩm</p>
+                <h2 id="shop-tieude">Tất cả sản phẩm</h2>
+            </div>
+        </section>
+
+        <section class="wrap" id="shop-layout">
+            <aside id="sidebar"></aside>
+
+            <div>
+                <div class="toolbar">
+                    <form class="form-tim"><input type="text" placeholder="Tìm sản phẩm..."><button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></form>
+                    <span id="shop-dem"></span>
+                    <button id="btn-loc"><i class="fa-solid fa-sliders"></i> Bộ lọc</button>
+                    <select id="sort-select">
+                        <option value="moi">Mới nhất</option>
+                        <option value="gia-tang">Giá tăng dần</option>
+                        <option value="gia-giam">Giá giảm dần</option>
+                        <option value="ten">Tên A - Z</option>
+                    </select>
+                </div>
+                <div class="shop-grid" id="ds-shop"></div>
+                <div class="giua"><button id="xem-them" class="btn btn-out">Xem thêm sản phẩm</button></div>
+            </div>
+        </section>
+    </div>
+    <div class="trang" id="trang-product"><div class="wrap" id="chi-tiet-noidung"></div></div>
+    <div class="trang" id="trang-cart"><div class="wrap" id="gio-noidung"></div></div>
+    <div class="trang" id="trang-checkout"><div class="wrap" id="tt-noidung"></div></div>
+    <div class="trang" id="trang-done"><div class="wrap" id="xong-noidung"></div></div>
+
+    <!-- ===== TRANG DANG NHAP ===== -->
+    <div class="trang" id="trang-login">
+        <div class="wrap">
+            <div class="auth-box">
+                <h2>Đăng nhập</h2>
+                <p class="auth-mota">Chào mừng bạn quay lại TYPH.</p>
+                <form id="form-login" novalidate>
+                    <label>Email
+                        <span class="o-nhap"><i class="fa-regular fa-envelope"></i><input type="text" name="email" placeholder="ten@gmail.com" autocomplete="username"></span>
+                        <em class="loi" id="loi-login-email"></em>
+                    </label>
+                    <label>Mật khẩu
+                        <span class="o-nhap"><i class="fa-solid fa-lock"></i><input type="password" name="matkhau" placeholder="Nhập mật khẩu" autocomplete="current-password"><i class="fa-regular fa-eye mat" data-hien-mk></i></span>
+                        <em class="loi" id="loi-login-matkhau"></em>
+                    </label>
+                    <p class="loi-chung" id="loi-login-chung"></p>
+                    <button type="submit" class="btn btn-dark full">Đăng nhập</button>
+                </form>
+                <p class="chuyen">Chưa có tài khoản? <a href="#/register">Đăng ký ngay</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TRANG DANG KY ===== -->
+    <div class="trang" id="trang-register">
+        <div class="wrap">
+            <div class="auth-box">
+                <h2>Đăng ký tài khoản</h2>
+                <p class="auth-mota">Tạo tài khoản để mua sắm nhanh hơn.</p>
+                <form id="form-register" novalidate>
+                    <label>Họ và tên *
+                        <span class="o-nhap"><i class="fa-regular fa-user"></i><input type="text" name="hoten" placeholder="Nguyễn Văn A" autocomplete="name"></span>
+                        <em class="loi" id="loi-register-hoten"></em>
+                    </label>
+                    <label>Email *
+                        <span class="o-nhap"><i class="fa-regular fa-envelope"></i><input type="text" name="email" placeholder="ten@gmail.com" autocomplete="email"></span>
+                        <em class="loi" id="loi-register-email"></em>
+                    </label>
+                    <label>Số điện thoại
+                        <span class="o-nhap"><i class="fa-solid fa-phone"></i><input type="text" name="sdt" placeholder="0901234567" autocomplete="tel"></span>
+                        <em class="loi" id="loi-register-sdt"></em>
+                    </label>
+                    <label>Mật khẩu * <small>(ít nhất 6 ký tự, có chữ và số)</small>
+                        <span class="o-nhap"><i class="fa-solid fa-lock"></i><input type="password" name="matkhau" placeholder="Tạo mật khẩu" autocomplete="new-password"><i class="fa-regular fa-eye mat" data-hien-mk></i></span>
+                        <em class="loi" id="loi-register-matkhau"></em>
+                    </label>
+                    <label>Nhập lại mật khẩu *
+                        <span class="o-nhap"><i class="fa-solid fa-lock"></i><input type="password" name="nhaplai" placeholder="Nhập lại mật khẩu" autocomplete="new-password"><i class="fa-regular fa-eye mat" data-hien-mk></i></span>
+                        <em class="loi" id="loi-register-nhaplai"></em>
+                    </label>
+                    <button type="submit" class="btn btn-dark full">Đăng ký</button>
+                </form>
+                <p class="chuyen">Đã có tài khoản? <a href="#/login">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer-main wrap">
+            <div class="col">
+                <h3 class="footer-logo">TYPH</h3>
+                <p>Công ty TNHH TYPH Deco (thông tin demo)</p>
+                <p><i class="fa-solid fa-location-dot"></i> Showroom 1: 123 Đường Mẫu, Phường Demo</p>
+                <p><i class="fa-solid fa-location-dot"></i> Showroom 2: 456 Đường Mẫu, Phường Demo</p>
+                <p><i class="fa-solid fa-phone"></i> Hotline: 0867 933 192</p>
+                <p><i class="fa-regular fa-envelope"></i> Email: truongthecuongtv2021@gmail.com</p>
+                <div class="mxh">
+                    <a href="#" data-sap aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" data-sap aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" data-sap aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>SẢN PHẨM</h4>
+                <a href="#/shop/sofa">Sofa</a>
+                <a href="#/shop/tham">Thảm</a>
+                <a href="#/shop/giuong">Giường</a>
+                <a href="#/shop/ban">Bàn</a>
+                <a href="#/shop/ghe">Ghế</a>
+                <a href="#/shop/tuke">Tủ & Kệ</a>
+                <a href="#/shop/den">Đèn</a>
+                <a href="#/shop/decor">Decor</a>
+            </div>
+            <div class="col">
+                <h4>VỀ TYPH</h4>
+                <a href="#" data-sap>Giới thiệu</a>
+                <a href="#" data-sap>Hệ thống cửa hàng</a>
+                <a href="#" data-sap>Tuyển dụng</a>
+                <a href="#" data-sap>Blog</a>
+            </div>
+            <div class="col">
+                <h4>TRỢ GIÚP</h4>
+                <a href="#" data-sap>Đặt hàng & Thanh toán</a>
+                <a href="#" data-sap>Vận chuyển & Giao hàng</a>
+                <a href="#" data-sap>Chính sách bảo hành</a>
+                <a href="#" data-sap>Chính sách đổi trả</a>
+            </div>
+        </div>
+        <div class="footer-bottom wrap">
+            <span>© 2026 TYPH Store. Giao diện phục vụ mục đích học tập.</span>
+            <span>Thiết kế cho không gian sống hiện đại.</span>
+        </div>
+    </section>
+
+    <div id="toast"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
